@@ -1,0 +1,253 @@
+  :root {
+      --bg-dark: #0b0c10;
+      --bg-lighter: #1f2833;
+      --accent-primary: #66fcf1;
+      --accent-secondary: #45a29e;
+      --text-main: #c5c6c7;
+      --text-white: #ffffff;
+      --transition: all 0.3s ease-in-out;
+  }
+
+  body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+  }
+
+  /* Target the placeholder text */
+#contact ::placeholder {
+  color: white; /* Change to any color you like */
+  opacity: 1; /* Ensures full visibility */
+}
+
+  /* Typography */
+  h1,
+  h2,
+  h3,
+  h4 {
+      color: var(--text-white);
+      font-weight: 700;
+  }
+
+  .mono {
+      font-family: 'Fira Code', monospace;
+  }
+
+  /* Navbar */
+  .navbar {
+      background-color: rgba(11, 12, 16, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(102, 252, 241, 0.1);
+      padding: 1rem 0;
+  }
+
+  .navbar-brand {
+      font-weight: 700;
+      color: var(--accent-primary) !important;
+      font-size: 1.5rem;
+  }
+
+  .nav-link {
+      color: var(--text-main) !important;
+      font-weight: 500;
+      margin: 0 10px;
+      transition: var(--transition);
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+      color: var(--accent-primary) !important;
+  }
+
+  /* Hero Section */
+  #hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 80px;
+  }
+
+  .hero-img {
+            border: 5px solid var(--accent-primary);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            animation: morphing 10s infinite alternate;
+            max-width: 100%;
+        }
+
+        @keyframes morphing {
+            0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+            100% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+        }
+
+  .typing-text {
+      color: var(--accent-primary);
+      min-height: 1.5em;
+  }
+
+  /* Buttons */
+  .btn-custom {
+      padding: 10px 30px;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: var(--transition);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+  }
+
+  .btn-outline-accent {
+      border: 2px solid var(--accent-primary);
+      color: var(--accent-primary);
+  }
+
+  .btn-outline-accent:hover {
+      background-color: var(--accent-primary);
+      color: var(--bg-dark);
+      box-shadow: 0 0 20px rgba(102, 252, 241, 0.4);
+  }
+
+  /* About & Code Block */
+  .code-window {
+      background: #1e1e1e;
+      border-radius: 8px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.9rem;
+  }
+
+  .code-header {
+      background: #333;
+      padding: 10px 15px;
+      display: flex;
+      gap: 8px;
+  }
+
+  .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+  }
+
+  .red {
+      background: #ff5f56;
+  }
+
+  .yellow {
+      background: #ffbd2e;
+  }
+
+  .green {
+      background: #27c93f;
+  }
+
+  .code-body {
+      padding: 20px;
+      color: #d4d4d4;
+  }
+
+  .code-keyword {
+      color: #569cd6;
+  }
+
+  .code-string {
+      color: #ce9178;
+  }
+
+  .code-comment {
+      color: #6a9955;
+  }
+
+  /* Skills */
+  .skill-badge {
+      background: var(--bg-lighter);
+      border: 1px solid rgba(102, 252, 241, 0.2);
+      padding: 10px 20px;
+      border-radius: 50px;
+      display: inline-block;
+      margin: 5px;
+      transition: var(--transition);
+  }
+
+  .skill-badge:hover {
+      border-color: var(--accent-primary);
+      transform: translateY(-5px);
+      color: var(--accent-primary);
+  }
+
+  /* Cards */
+  .card {
+      background-color: var(--bg-lighter);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: var(--transition);
+  }
+
+  .card:hover {
+      transform: translateY(-10px);
+      border-color: var(--accent-primary);
+  }
+
+  .project-card img {
+      height: 200px;
+      object-fit: cover;
+  }
+
+  /* Services */
+  .service-icon {
+      font-size: 2.5rem;
+      color: var(--accent-primary);
+      margin-bottom: 1.5rem;
+  }
+
+  /* Contact Form */
+  .form-control {
+      background-color: var(--bg-lighter);
+      border: 1px solid #333;
+      color: var(--text-white);
+      padding: 12px;
+  }
+
+  .form-control:focus {
+      background-color: var(--bg-lighter);
+      border-color: var(--accent-primary);
+      color: var(--text-white);
+      box-shadow: none;
+  }
+
+  /* Scroll Animation Utility */
+  .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+  }
+
+  .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  /* Back to top */
+  #btn-back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      z-index: 1000;
+  }
+
+  footer {
+      padding: 50px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .social-links a {
+      font-size: 1.5rem;
+      color: var(--text-main);
+      margin: 0 15px;
+      transition: var(--transition);
+  }
+
+  .social-links a:hover {
+      color: var(--accent-primary);
+  }
