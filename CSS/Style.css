@@ -71,14 +71,14 @@
 
   .hero-img {
             border: 5px solid var(--accent-primary);
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            border-radius: 80% / 80%;
             animation: morphing 10s infinite alternate;
             max-width: 100%;
         }
 
         @keyframes morphing {
-            0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-            100% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+            0% { border-radius: 0% / 0%; }
+            100% { border-radius: 45% / 45%; }
         }
 
   .typing-text {
