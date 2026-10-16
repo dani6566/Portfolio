@@ -359,21 +359,17 @@
       justify-content: center;
       overflow: hidden;
       padding: 1.5rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
 
-  .project-visual::before,
-  .project-visual::after {
+  .project-visual::before {
       position: absolute;
-      width: 220px;
-      height: 220px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
       content: "";
-  }
-
-  .project-visual::after {
-      width: 280px;
-      height: 280px;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(11, 12, 16, 0.16), transparent 58%);
+      pointer-events: none;
   }
 
   .visual-streaming {
@@ -524,6 +520,10 @@
   .visual-forum {
     background-image: url('../images/AI_Forum.jpg');
       /* background: radial-gradient(ellipse at 80% 20%, #354778, #171d30 54%, #11151e); */
+  }
+
+  .project-visual > * {
+      display: none;
   }
 
   .forum-heading {
