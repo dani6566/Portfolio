@@ -11,6 +11,10 @@
         let isDeleting = false;
 
         function type() {
+            if (!typingText) {
+                return;
+            }
+
             const currentRole = roles[roleIndex];
             if (isDeleting) {
                 typingText.textContent = currentRole.substring(0, charIndex - 1);
@@ -48,13 +52,17 @@
         }
 
         // Back to Top Button
-        let mybutton = document.getElementById("btn-back-to-top");
+        const mybutton = document.getElementById("btn-back-to-top");
         window.onscroll = function () {
             scrollFunction();
             reveal();
         };
 
         function scrollFunction() {
+            if (!mybutton) {
+                return;
+            }
+
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
             } else {
@@ -62,21 +70,26 @@
             }
         }
 
-        mybutton.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+        if (mybutton) {
+            mybutton.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        }
 
         // Initialize
         window.addEventListener("scroll", reveal);
         document.addEventListener("DOMContentLoaded", () => {
             type();
             reveal();
-            document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+            const copyrightYear = document.getElementById("copyrightYear");
+            if (copyrightYear) {
+                copyrightYear.textContent = new Date().getFullYear();
+            }
 
             document.querySelectorAll("#navbarNav .nav-link").forEach((link) => {
                 link.addEventListener("click", () => {
                     const navbar = document.getElementById("navbarNav");
-                    if (navbar.classList.contains("show")) {
+                    if (navbar && navbar.classList.contains("show") && window.bootstrap) {
                         bootstrap.Collapse.getOrCreateInstance(navbar).hide();
                     }
                 });
