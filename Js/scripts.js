@@ -1,7 +1,11 @@
 
         // 1. Typing Animation
         const typingText = document.querySelector(".typing-text");
-        const roles = ["Full Stack Web Developer", "UI/UX Enthusiast", "Problem Solver"];
+        const roles = [
+            "Full-Stack Developer",
+            "AI-Powered Product Builder",
+            "Thoughtful Problem Solver"
+        ];
         let roleIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -43,22 +47,7 @@
             }
         }
 
-        // 3. Form Validation
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', function(event) {
-            if (!contactForm.checkValidity()) {
-                event.preventDefault();
-                event.stopPropagation();
-            } else {
-                event.preventDefault();
-                document.getElementById('formSuccess').classList.remove('d-none');
-                contactForm.reset();
-                contactForm.classList.remove('was-validated');
-            }
-            contactForm.classList.add('was-validated');
-        }, false);
-
-        // 4. Back to Top Button
+        // Back to Top Button
         let mybutton = document.getElementById("btn-back-to-top");
         window.onscroll = function () {
             scrollFunction();
@@ -82,4 +71,14 @@
         document.addEventListener("DOMContentLoaded", () => {
             type();
             reveal();
+            document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+
+            document.querySelectorAll("#navbarNav .nav-link").forEach((link) => {
+                link.addEventListener("click", () => {
+                    const navbar = document.getElementById("navbarNav");
+                    if (navbar.classList.contains("show")) {
+                        bootstrap.Collapse.getOrCreateInstance(navbar).hide();
+                    }
+                });
+            });
         });

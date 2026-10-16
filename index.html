@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Danny Dev | Full Stack Web Developer</title>
+    <title>Daniel Hailay | Full-Stack Developer</title>
     <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -28,6 +28,9 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,29 +62,27 @@
       <div class="container" id="hero">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <h5
-              class="mono text-accent mb-3"
-              style="color: var(--accent-primary)"
-            >
-              Hello World, I'm
+            <h5 class="mono text-accent mb-3" style="color: var(--accent-primary)">
+              Hello, I'm
             </h5>
             <h1 class="display-3 mb-2">Daniel Hailay</h1>
             <h3 class="typing-text h2 mb-4"></h3>
             <p class="lead mb-5">
-              Crafting robust digital experiences with clean code and modern
-              aesthetics. Specialized in full-stack performance.
+              Evangadi-trained full-stack developer building thoughtful web
+              experiences—from polished interfaces to dependable backends—with
+              a growing focus on AI-powered products.
             </p>
-            <div class="d-flex gap-3">
+            <div class="d-flex flex-wrap gap-3">
               <a href="#projects" class="btn btn-custom btn-outline-accent"
                 >View Projects</a
               >
-              <a href="#contact" class="btn btn-custom btn-outline-accent"
-                >Hire Me</a
+              <a href="#contact" class="btn btn-custom btn-outline-secondary"
+                >Let's Connect</a
               >
             </div>
           </div>
           <div class="col-lg-6 text-center mt-5 mt-lg-0">
-            <img src="./images/profile.png" alt="Profile" class="hero-img" />
+            <img src="./images/profile.png" alt="Portrait of Daniel Hailay" class="hero-img" />
           </div>
         </div>
       </div>
@@ -94,17 +95,20 @@
           <div class="col-lg-6 mb-4 mb-lg-0">
             <h2 class="mb-4">About Me</h2>
             <p>
-              I am a passionate Full Stack Developer with Start building
-              scalable web applications. My journey started with a curiosity for
-              how things work on the internet, which evolved into a career of
-              solving complex problems through code.
+              I'm Daniel, a full-stack developer and Evangadi Networks
+              graduate. I enjoy turning ideas into useful, accessible web
+              products—working across the interface, application logic, and the
+              details that make an experience feel complete.
             </p>
             <p>
-              I focus on creating high-performance applications that provide
-              seamless user experiences across all devices. When I'm not coding,
-              you can find me exploring new tech trends or contributing to
-              open-source projects.
+              My current portfolio includes an entertainment streaming
+              experience, a conversational AI interface, and an AI-powered
+              community forum. I care about responsive design, maintainable
+              code, and learning the right tools to solve each problem.
             </p>
+            <a class="about-link" href="#contact">
+              Interested in working together? <span>Get in touch &rarr;</span>
+            </a>
           </div>
           <div class="col-lg-6">
             <div class="code-window">
@@ -117,19 +121,18 @@
                 <div class="mono">
                   <span class="code-keyword">const</span> developer = {<br />
                   &nbsp;&nbsp;name:
-                  <span class="code-string">"Daniel Haliay"</span>,<br />
+                  <span class="code-string">"Daniel Hailay"</span>,<br />
                   &nbsp;&nbsp;role:
-                  <span class="code-string">"Full Stack Developer"</span>,<br />
+                  <span class="code-string">"Full-Stack Developer"</span>,<br />
                   &nbsp;&nbsp;passion:
-                  <span class="code-string">"Clean Code & UX"</span>,<br />
+                  <span class="code-string">"Useful products & clean UX"</span>,<br />
                   &nbsp;&nbsp;education:
-                  <span class="code-string">"Evangadi Networks"</span>,<br />
+                  <span class="code-string">"Evangadi Networks graduate"</span>,<br />
                   &nbsp;&nbsp;skills: [<span class="code-string">"HTML"</span>,
                   <span class="code-string">"CSS"</span>,
-                  <span class="code-string">"Bootstrap"</span>,<span
-                    class="code-string"
-                    >"Python"</span
-                  >]<br />
+                  <span class="code-string">"JavaScript"</span>,
+                  <span class="code-string">"Node.js"</span>,
+                  <span class="code-string">"Express"</span>]<br />
                   };<br />
                   <span class="code-comment">// Ready to build the future</span>
                 </div>
@@ -169,82 +172,86 @@
     <!-- Projects Section -->
     <section id="projects" class="py-5">
       <div class="container py-5">
-        <h2 class="text-center mb-5 reveal">Featured Projects</h2>
+        <div class="section-heading reveal">
+          <p class="eyebrow mono">SELECTED WORK</p>
+          <h2>Projects built to solve real problems</h2>
+          <p class="section-intro">
+            A selection of full-stack and AI-powered experiences. Project
+            repositories are available on GitHub; live demo links can be added
+            as each deployment is published.
+          </p>
+        </div>
         <div class="row g-4 reveal">
-          <!-- Project 1 -->
-          <div class="col-md-4">
-            <div class="card h-100 project-card">
-              <img
-                src="./images/myphoto/apple_image.jpg"
-                class="card-img-top"
-                alt="Project 1"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-light">Apple Demo site</h5>
-                <p class="card-text text-light">
-                  A fully User interface (UI) Apple site with HTML,CSS &
-                  bootstrap.
+          <div class="col-lg-4 col-md-6">
+            <article class="card h-100 project-card">
+              <div class="project-visual visual-streaming" aria-hidden="true">
+                <div class="stream-top"><span>NETFLIX</span><i class="fas fa-search"></i></div>
+                <div class="stream-copy"><span>FEATURED</span><strong>Stories<br />for every mood.</strong><i class="fas fa-play"></i></div>
+                <div class="stream-thumbnails"><i></i><i></i><i></i><i></i></div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="project-type mono">STREAMING EXPERIENCE</div>
+                <h3 class="card-title text-light">Netflix Clone</h3>
+                <p class="card-text">
+                  A streaming-inspired interface focused on cinematic
+                  presentation, intuitive browsing, and responsive layouts.
                 </p>
-                <div class="mt-3">
-                  <a href="#" class="btn btn-sm btn-outline-accent me-2"
-                    >Live Demo</a
-                  >
-                  <a
-                    href="https://github.com/dani6566/Evangadi-Network/tree/main/Phase-1"
-                    class="btn btn-sm btn-outline-secondary"
-                    ><i class="fab fa-github"></i> Source</a
-                  >
+                <div class="project-tags"><span>Responsive UI</span><span>JavaScript</span><span>Full Stack</span></div>
+                <div class="project-actions mt-auto">
+                  <a href="https://github.com/dani6566?tab=repositories" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Browse GitHub</a>
+                  <a href="#contact" class="project-link project-link-muted">Demo info <i class="fas fa-arrow-right"></i></a>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
-          <!-- Project 2 -->
-          <div class="col-md-4">
-            <div class="card h-100 project-card">
-              <img
-                src="./images/myphoto/puppy_lover_image.jpg"
-                class="card-img-top"
-                alt="Project 2"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-light">Pappy Lover Page</h5>
-                <p class="card-text text-light">
-                  Puppy Lover page built with HTML and CSS.
-                </p>
-                <div class="mt-3">
-                  <a href="#" class="btn btn-sm btn-outline-accent me-2"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-secondary"
-                    ><i class="fab fa-github"></i> Source</a
-                  >
+          <div class="col-lg-4 col-md-6">
+            <article class="card h-100 project-card">
+              <div class="project-visual visual-assistant" aria-hidden="true">
+                <div class="assistant-window">
+                  <div class="assistant-mark"><i class="fas fa-sparkles"></i></div>
+                  <span class="assistant-label">AI ASSISTANT</span>
+                  <strong>What can I help<br />you explore?</strong>
+                  <div class="assistant-prompt"><span>Ask me anything...</span><i class="fas fa-arrow-up"></i></div>
                 </div>
               </div>
-            </div>
+              <div class="card-body d-flex flex-column">
+                <div class="project-type mono">CONVERSATIONAL AI</div>
+                <h3 class="card-title text-light">ChatGPT Clone</h3>
+                <p class="card-text">
+                  A conversational assistant concept with a clean chat
+                  interface designed to make AI interactions feel approachable.
+                </p>
+                <div class="project-tags"><span>AI</span><span>Chat UI</span><span>JavaScript</span></div>
+                <div class="project-actions mt-auto">
+                  <a href="https://github.com/dani6566?tab=repositories" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Browse GitHub</a>
+                  <a href="#contact" class="project-link project-link-muted">Demo info <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </article>
           </div>
-          <!-- Project 3 -->
-          <div class="col-md-4">
-            <div class="card h-100 project-card">
-              <img
-                src="./images/myphoto/amazon_image.jpg"
-                class="card-img-top"
-                alt="Project 3"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-light">Amazon Demo site</h5>
-                <p class="card-text text-light">
-                  Real-time data visualization using HTML,CSS and Bootstrap
-                </p>
-                <div class="mt-3">
-                  <a href="#" class="btn btn-sm btn-outline-accent me-2"
-                    >Live Demo</a
-                  >
-                  <a href="#" class="btn btn-sm btn-outline-secondary"
-                    ><i class="fab fa-github"></i> Source</a
-                  >
+          <div class="col-lg-4 col-md-6">
+            <article class="card h-100 project-card">
+              <div class="project-visual visual-forum" aria-hidden="true">
+                <div class="forum-window">
+                  <div class="forum-heading"><i class="fas fa-comments"></i><span>EVANGADI COMMUNITY</span></div>
+                  <div class="forum-question"><i class="fas fa-user-circle"></i><span><b>How do I structure my API?</b><small>Asked by a curious developer</small></span></div>
+                  <div class="forum-answer"><i class="fas fa-wand-magic-sparkles"></i><span>AI-powered guidance<br /><small>Learn together. Build together.</small></span></div>
                 </div>
               </div>
-            </div>
+              <div class="card-body d-flex flex-column">
+                <div class="project-type mono">COMMUNITY + AI</div>
+                <h3 class="card-title text-light">AI Evangadi Forum</h3>
+                <p class="card-text">
+                  A learning community concept that brings discussion and
+                  AI-assisted support together for developer questions.
+                </p>
+                <div class="project-tags"><span>Community</span><span>AI</span><span>Full Stack</span></div>
+                <div class="project-actions mt-auto">
+                  <a href="https://github.com/dani6566?tab=repositories" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Browse GitHub</a>
+                  <a href="#contact" class="project-link project-link-muted">Demo info <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -291,54 +298,23 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5">
       <div class="container py-5">
-        <h2 class="text-center mb-5 reveal">Get In Touch</h2>
-        <div class="row justify-content-center reveal">
-          <div class="col-md-7">
-            <form id="contactForm" class="needs-validation" novalidate>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Your Name"
-                  required
-                />
-                <div class="invalid-feedback">Please enter your name.</div>
-              </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Your Email"
-                  required
-                />
-                <div class="invalid-feedback">
-                  Please enter a valid email address.
-                </div>
-              </div>
-              <div class="mb-3">
-                <textarea
-                  class="form-control"
-                  id="message"
-                  rows="5"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-                <div class="invalid-feedback">Please enter a message.</div>
-              </div>
-              <div class="text-center">
-                <button
-                  type="submit"
-                  class="btn btn-custom btn-outline-accent w-100"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-            <div id="formSuccess" class="alert alert-success mt-3 d-none">
-              Message sent successfully! I'll get back to you soon.
-            </div>
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <p class="eyebrow mono">HAVE A PROJECT IN MIND?</p>
+            <h2>Let's build something meaningful.</h2>
+            <p>
+              I'm always glad to connect with fellow developers, teams, and
+              people with thoughtful ideas. Reach out through LinkedIn or
+              explore my work on GitHub.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a href="https://et.linkedin.com/in/daniel-hailay" target="_blank" rel="noopener noreferrer" class="btn btn-custom btn-outline-accent">
+              <i class="fab fa-linkedin me-2"></i>Connect on LinkedIn
+            </a>
+            <a href="https://github.com/dani6566" target="_blank" rel="noopener noreferrer" class="btn btn-custom btn-outline-secondary">
+              <i class="fab fa-github me-2"></i>View GitHub
+            </a>
           </div>
         </div>
       </div>
@@ -348,16 +324,15 @@
     <footer class="text-center">
       <div class="container">
         <div class="social-links mb-4">
-          <a href="https://github.com/dani6566"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://et.linkedin.com/in/daniel-hailay"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/dani6566" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://et.linkedin.com/in/daniel-hailay" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
         <p class="text-muted">
-          &copy; 2023 Danny Dev. Built with &hearts; and JavaScript.
+          &copy; <span id="copyrightYear"></span> Daniel Hailay. Designed and built with care.
         </p>
       </div>
     </footer>
