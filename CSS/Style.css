@@ -377,7 +377,9 @@
   }
 
   .visual-streaming {
-      background: radial-gradient(ellipse at 70% 20%, #6a171e, #20151c 52%, #111318);
+    background-image: url('../images/netflix.jpg');
+    
+      /* background: radial-gradient(ellipse at 70% 20%, #6a171e, #20151c 52%, #111318); */
   }
 
   .stream-top {
@@ -459,7 +461,8 @@
   }
 
   .visual-assistant {
-      background: radial-gradient(ellipse at 50% 20%, #164d50, #142129 55%, #11171d);
+    background-image: url('../images/chatgpt.jpg');
+      /* background: radial-gradient(ellipse at 50% 20%, #164d50, #142129 55%, #11171d); */
   }
 
   .assistant-window,
@@ -519,7 +522,8 @@
   }
 
   .visual-forum {
-      background: radial-gradient(ellipse at 80% 20%, #354778, #171d30 54%, #11151e);
+    background-image: url('../images/AI_Forum.jpg');
+      /* background: radial-gradient(ellipse at 80% 20%, #354778, #171d30 54%, #11151e); */
   }
 
   .forum-heading {
